@@ -19,6 +19,8 @@
                 "No, Mel Gibson is a casino’s big lemon",
                 "Is not a palindrome"
             };
+            System.Console.WriteLine("Task1 - StringReverse \t Author: Artem Reush");
+            System.Console.WriteLine(new string('-', 50));
             foreach (string str in sentences)
             {
                 System.Console.WriteLine("\"{0}\" - \"{1}\"", str, str.Reverse());

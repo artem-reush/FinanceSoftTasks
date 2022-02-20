@@ -1,4 +1,5 @@
-﻿using System;
+﻿using _1_StringReverce;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -16,7 +17,7 @@ namespace _3_CountOfEntries
                 throw new ArgumentNullException(nameof(str));
             }
             Dictionary<char, int> dic = new Dictionary<char, int>();
-            char[] array = str.ToLower().ToCharArray();
+            char[] array = str.ToLower().CustomToCharArray();
             //Сортируем строку.
             Array.Sort(array);
             //Линейно проходим по ней, считая количество повторяющихся символов.

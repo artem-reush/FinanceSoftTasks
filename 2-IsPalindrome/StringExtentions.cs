@@ -12,6 +12,10 @@ namespace _2_IsPalindrome
             {
                 throw new ArgumentNullException(nameof(str));
             }
+            if(str.Length < 2)
+            {
+                return true;
+            }
             string lowerStr = str.DeleteNotLetters().ToLower();
             //При таком подходе достаточно обойти лишь буквы с индексами 0...length/2-1. Деление целочисленное.
             int endIndex = lowerStr.Length / 2 - 1;
@@ -27,6 +31,10 @@ namespace _2_IsPalindrome
 
         private static string DeleteNotLetters(this string str)
         {
+            if (str == null)
+            {
+                throw new ArgumentNullException(nameof(str));
+            }
             const char russianUppercaseA = 'А';
             const char russianLowercaseA = 'а';
             const char englishUppercaseA = 'A';

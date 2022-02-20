@@ -7,4 +7,8 @@
     <Authors>Artem Reush</Authors>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\1-StringReverce\1-StringReverce.csproj" />
+  </ItemGroup>
+
 </Project>

@@ -15,7 +15,9 @@ namespace _3_CountOfEntries
                 "Lorem Ipsum is simply",
                 "Он - верба, но Она - бревно"
             };
-            foreach(string str in sentences)
+            Console.WriteLine("Task3 - CountOfEntries \t Author: Artem Reush");
+            Console.WriteLine(new string('-', 50));
+            foreach (string str in sentences)
             {
                 Console.WriteLine($"\"{str}\" -> {GetNumberOfEntries(str)}");
             }

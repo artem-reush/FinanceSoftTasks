@@ -21,7 +21,9 @@ namespace _2_IsPalindrome
                 "No, Mel Gibson is a casino’s big lemon",
                 "Is not a palindrome"
             };
-            foreach(string str in sentences)
+            Console.WriteLine("Task2 - IsPalindrome \t Author: Artem Reush");
+            Console.WriteLine(new string('-', 50));
+            foreach (string str in sentences)
             {
                 Console.WriteLine("\"{0}\" {1} является палиндромом", str, str.IsPalindrome()? string.Empty: "НЕ");
             }
